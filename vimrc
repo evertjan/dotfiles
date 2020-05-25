@@ -4,6 +4,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin('~/nvim/plugged')
+Plug 'tomasiser/vim-code-dark'
 Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
 Plug 'StanAngeloff/php.vim'
@@ -15,6 +16,7 @@ set nocompatible
 filetype plugin indent on
 set path+=**
 set wildmenu
+"set wildmode=longest,list,full
 "set lazyredraw
 set titleold=
 "set nofoldenable
@@ -43,9 +45,11 @@ set sts=4
 set smarttab
 set vb
 
+set splitbelow splitright
+
 set laststatus=2
 set noshowmode
-let g:lightline = { 'colorscheme': 'OldHope', }
+"let g:lightline = { 'colorscheme': 'OldHope', }
 
 set updatetime=100
 set nu
@@ -60,15 +64,18 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 nnoremap n nzz
 nnoremap N Nzz
 
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 au BufRead,BufNewFile *.yml,*.yaml,*.eyaml set ft=yaml
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
 syntax on
-color molokai
+color codedark
+"color molokai
 hi Normal guibg=#000000 ctermbg=000
-hi LineNr guifg=#BCBCBC guibg=#3B3A32  ctermfg=243 ctermbg=236
-hi CursorLineNr guifg=#BCBCBC guibg=#3B3A32  ctermfg=NONE ctermbg=239
-hi Visual guifg=#1a1a1a guibg=#e4dfff guisp=#e4dfff gui=NONE ctermfg=234 ctermbg=189 cterm=NONE
+"hi LineNr guifg=#BCBCBC guibg=#3B3A32  ctermfg=243 ctermbg=236
+"hi CursorLineNr guifg=#BCBCBC guibg=#3B3A32  ctermfg=NONE ctermbg=239
+"hi Visual guifg=#1a1a1a guibg=#e4dfff guisp=#e4dfff gui=NONE ctermfg=234 ctermbg=189 cterm=NONE
 
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
