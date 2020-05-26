@@ -1,6 +1,6 @@
-PS1="\[\033[01;36m\]\u@\h\[\033[01;32m\] \w\[\033[01;36m\] \$\[\033[00m\] "
+PS1="\[\033[01;34m\]\u@\h\[\033[01;36m\] \w\[\033[01;34m\] \$\[\033[00m\] "
 export PS1
-LS_COLORS='di=01;36'
+LS_COLORS='di=01;34'
 export LS_COLORS
 EDITOR=vi
 export EDITOR
