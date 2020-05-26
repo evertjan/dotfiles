@@ -1,0 +1,10 @@
+PS1="\[\033[01;36m\]\u@\h\[\033[01;32m\] \w\[\033[01;36m\] \$\[\033[00m\] "
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias vi='vim'
+export EDITOR=vi
+set -o vi
+LS_COLORS='di=01;36'
+export LS_COLORS
+GPG_TTY=$(tty)
+export GPG_TTY
