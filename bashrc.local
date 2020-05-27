@@ -12,3 +12,4 @@ alias llt='ls -latr --color=auto'
 alias ls='ls --color=auto'
 alias vi='vim'
 set -o vi
+
