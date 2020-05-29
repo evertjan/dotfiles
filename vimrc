@@ -44,7 +44,7 @@ set tabstop=4
 set softtabstop=4
 set smarttab
 set vb
-set colorcolumn=81,121
+"set colorcolumn=81,121
 
 set splitbelow splitright
 
