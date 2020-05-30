@@ -52,6 +52,8 @@ set laststatus=2
 set noshowmode
 "let g:lightline = { 'colorscheme': 'OldHope', }
 
+set timeoutlen=5
+set ttimeoutlen=5
 set updatetime=100
 set nu
 set rnu
