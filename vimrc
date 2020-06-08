@@ -10,6 +10,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'alvan/vim-closetag'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set nocompatible
@@ -63,6 +65,18 @@ let g:netrw_banner=0        " disable annoying banner
 let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.php'
+let g:closetag_filetypes = 'html,xhtml,phtml,php'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+let g:closetag_emptyTags_caseSensitive = 1
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ }
+let g:closetag_shortcut = '>'
+let g:closetag_close_shortcut = '<leader>>'
 
 nnoremap n nzz
 nnoremap N Nzz
