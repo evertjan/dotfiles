@@ -3,7 +3,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-call plug#begin('~/nvim/plugged')
+call plug#begin('~/.nvim/plugged')
 Plug 'tomasiser/vim-code-dark'
 Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
