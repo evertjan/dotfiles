@@ -1,8 +1,8 @@
-PS1="[\[\033[01;36m\]\u@\h\[\033[01;32m\] \w\[\033[00m\]]\n\\$ "
+PS1="[\[\033[0;36m\]\u@\h\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
 export PS1
 TZ="Europe/Amsterdam"
 export TZ
-LS_COLORS='di=01;34'
+LS_COLORS='di=0;36'
 export LS_COLORS
 EDITOR=vi
 export EDITOR
