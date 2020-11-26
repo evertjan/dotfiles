@@ -58,7 +58,7 @@ set timeoutlen=5
 set ttimeoutlen=5
 set updatetime=100
 set nu
-set rnu
+"set rnu
 let g:gitgutter_max_signs=-1
 
 let g:netrw_banner=0        " disable annoying banner
@@ -84,7 +84,7 @@ nnoremap N Nzz
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Vertically center document when entering insert mode
-autocmd InsertEnter * norm zz
+"autocmd InsertEnter * norm zz
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
