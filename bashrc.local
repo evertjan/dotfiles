@@ -1,4 +1,26 @@
-PS1="[\[\033[0;36m\]\u@\h\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+case $LOGNAME in
+    u388-mmvk7u23sxdg)
+        PS1="[\[\033[0;36m\]vanramselaar.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+    u395-28n3q2rx7t4p)
+        PS1="[\[\033[0;36m\]telgterhof.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+    u441-pmaqy7sua69x)
+        PS1="[\[\033[0;36m\]rmslr.com\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+    u108-b9v9y6fqjvjf)
+        PS1="[\[\033[0;36m\]112alarm.net\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+    u282-nzhttjtbsdne)
+        PS1="[\[\033[0;36m\]live112.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+    u657-autmgxefnfun)
+        PS1="[\[\033[0;36m\]meldkamer-online.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+    *)
+        PS1="[\[\033[0;36m\]\u@\h\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        ;;
+esac
 export PS1
 TZ="Europe/Amsterdam"
 export TZ
