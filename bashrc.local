@@ -37,6 +37,7 @@ alias ll='ls -l --color=auto'
 alias lla='ls -la --color=auto'
 alias llt='ls -latr --color=auto'
 alias ls='ls --color=auto'
+alias ip='ip -c=auto'
 alias vi='vim'
 set -o vi
 

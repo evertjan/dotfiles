@@ -11,7 +11,7 @@ Plug 'StanAngeloff/php.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set nocompatible
