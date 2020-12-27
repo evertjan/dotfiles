@@ -1,3 +1,11 @@
+alias ll='ls -o --color=auto'
+alias lla='ls -oa --color=auto'
+alias llt='ls -oatr --color=auto'
+alias ls='ls --color=auto'
+alias ip='ip -c=auto'
+alias vi='vim'
+set -o vi
+
 site=`hostname`
 case $LOGNAME in
     u388-mmvk7u23sxdg)
@@ -24,6 +32,9 @@ case $LOGNAME in
         ;;
     *)
         site=`hostname`
+        alias ll='ls -l --color=auto'
+        alias lla='ls -la --color=auto'
+        alias llt='ls -latr --color=auto'
         ;;
 esac
 PS1="┌─(\[\033[0;36m\]"$site"\[\033[00m\]) [\[\033[0;32m\]\w\[\033[00m\]]\n└\\$ "
@@ -36,13 +47,6 @@ EDITOR=vi
 export EDITOR
 GPG_TTY=$(tty)
 export GPG_TTY
-alias ll='ls -l --color=auto'
-alias lla='ls -la --color=auto'
-alias llt='ls -latr --color=auto'
-alias ls='ls --color=auto'
-alias ip='ip -c=auto'
-alias vi='vim'
-set -o vi
 
 if [ -f ~/.bashgit ]; then
     . ~/.bashgit
