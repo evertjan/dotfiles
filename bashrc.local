@@ -1,29 +1,32 @@
+site=`hostname`
 case $LOGNAME in
     u388-mmvk7u23sxdg)
-        PS1="[\[\033[0;36m\]vanramselaar.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site="vanramselaar.nl"
         ;;
     u395-28n3q2rx7t4p)
-        PS1="[\[\033[0;36m\]telgterhof.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site="telgterhof.nl"
         ;;
     u441-pmaqy7sua69x)
-        PS1="[\[\033[0;36m\]rmslr.com\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site="rmslr.com"
         ;;
     u108-b9v9y6fqjvjf)
-        PS1="[\[\033[0;36m\]112alarm.net\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site="112alarm.net"
         ;;
     u282-nzhttjtbsdne)
-        PS1="[\[\033[0;36m\]live112.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site="live112.nl"
         ;;
     u657-autmgxefnfun)
-        PS1="[\[\033[0;36m\]meldkamer-online.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site="meldkamer-online.nl"
         ;;
     u141-pd5v7r9cp5bx)
-        PS1="[\[\033[0;36m\]go112.nl\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        PS1="┌[\[\033[0;36m\]go112.nl\[\033[0;32m\] \w\[\033[00m\]]\n└\\$ "
+        site="go112.nl"
         ;;
     *)
-        PS1="[\[\033[0;36m\]\u@\h\[\033[0;32m\] \w\[\033[00m\]]\n\\$ "
+        site=`hostname`
         ;;
 esac
+PS1="┌─(\[\033[0;36m\]"$site"\[\033[00m\]) [\[\033[0;32m\]\w\[\033[00m\]]\n└\\$ "
 export PS1
 TZ="Europe/Amsterdam"
 export TZ
