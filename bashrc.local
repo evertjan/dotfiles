@@ -36,7 +36,7 @@ case $LOGNAME in
         alias llt='ls -latr --color=auto'
         ;;
 esac
-PS1="┌─(\[\033[0;36m\] "$site" \[\033[00m\])──[\[\033[0;32m\] \w \[\033[00m\]]\n└\\$ "
+PS1="\[\033[1;30m\]┌─(\[\033[0;36m\] "$site" \[\033[1;30m\])──[\[\033[0;32m\] \w \[\033[1;30m\]]\n\[\033[1;30m\]└\[\033[00m\]\\$ "
 export PS1
 TZ="Europe/Amsterdam"
 export TZ
