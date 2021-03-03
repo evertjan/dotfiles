@@ -36,11 +36,11 @@ case $LOGNAME in
         alias llt='ls -latr --color=auto'
         ;;
 esac
-PS1="\[\033[1;30m\]┌─(\[\033[0;36m\] "$site" \[\033[1;30m\])──[\[\033[0;32m\] \w \[\033[1;30m\]]\n\[\033[1;30m\]└\[\033[00m\]\\$ "
+PS1="\[\033[1;30m\]┌─(\[\033[1;36m\] "$site" \[\033[1;30m\])──[\[\033[1;32m\] \w \[\033[1;30m\]]\n\[\033[1;30m\]└\[\033[00m\]\\$ "
 export PS1
 TZ="Europe/Amsterdam"
 export TZ
-LS_COLORS='di=0;36'
+LS_COLORS='di=1;36'
 export LS_COLORS
 EDITOR=vi
 export EDITOR

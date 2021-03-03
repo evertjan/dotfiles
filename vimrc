@@ -10,7 +10,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'alvan/vim-closetag'
+"Plug 'alvan/vim-closetag'
 "Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
